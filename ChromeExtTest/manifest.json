@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Grow Automated",
+    "version": "1.0",
+    "description": "this is to automatically type currentprice in limit order",
+    "content_scripts":[
+        {
+            "matches":["https://groww.in/charts/*"],
+            "js" :["Content.js"]
+        }
+    ],
+    "action": {
+    "default_popup": "popup.html"
+  }
+    
+  }
